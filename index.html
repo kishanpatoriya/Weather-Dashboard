@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <div>
+                <h1>Weather Dashboard</h1>
+                <p>Live Weather Updates Worldwide</p>
+            </div>
+
+            <button id="themeBtn">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        <div class="search-box">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="datetime">
+            <div id="date"></div>
+            <div id="time"></div>
+        </div>
+
+        <div class="main-content">
+            <div class="history-box">
+                <h3>Recent Searches</h3>
+                <ul id="historyList">
+                   
+                </ul>
+            </div>
+
+            <div class="weather-card">
+                <h2 id="cityName">Search City</h2>
+
+                <img src="" alt="" id="watherIcon">
+                <h1 id="temperature">--</h1>
+                <p id="condition">Weather Condition</p>
+
+                <div class="weather-info">
+                    <div>
+                       Humidity :
+                       <span id="humidity"></span>
+                    </div>
+
+                    <div>
+                        Wind :
+                        <span id="wind"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

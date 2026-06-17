@@ -1,0 +1,14 @@
+@media (max-width:768px) {
+    .main-content{
+        grid-template-columns: 1fr;
+    }
+
+    .search-box{
+        flex-direction: column;
+    }
+
+    .datetime{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
