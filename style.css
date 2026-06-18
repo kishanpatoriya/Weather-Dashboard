@@ -97,6 +97,7 @@ body{
     color: white;
 }
 
-.dark .weather-card,.dark .history-box,.dark .datatime{
+.dark .weather-card,.dark .history-box,.dark .datetime,.dark #city{
     background-color: #1f2937;
+    color: white;
 }

@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="top-bar">
+        <header class="top-bar">
             <div>
                 <h1>Weather Dashboard</h1>
                 <p>Live Weather Updates Worldwide</p>
@@ -19,29 +19,29 @@
             <button id="themeBtn">
                 <i class="fas fa-moon"></i>
             </button>
-        </div>
-        <div class="search-box">
+        </header>
+        <section class="search-box">
             <input type="text" id="city" placeholder="Enter city name">
             <button id="searchBtn">Search</button>
-        </div>
+        </section>
 
-        <div class="datetime">
+        <section class="datetime">
             <div id="date"></div>
             <div id="time"></div>
-        </div>
+        </section>
 
-        <div class="main-content">
-            <div class="history-box">
+        <main class="main-content">
+            <aside class="history-box">
                 <h3>Recent Searches</h3>
                 <ul id="historyList">
                    
                 </ul>
-            </div>
+            </aside>
 
-            <div class="weather-card">
+            <article class="weather-card">
                 <h2 id="cityName">Search City</h2>
 
-                <img src="" alt="" id="watherIcon">
+                <img src="" alt="weather-icon" id="weatherIcon" hidden>
                 <h1 id="temperature">--</h1>
                 <p id="condition">Weather Condition</p>
 
@@ -57,8 +57,8 @@
                     </div>
 
                 </div>
-            </div>
-        </div>
+            </article>
+        </main>
     </div>
 
     <script src="script.js"></script>

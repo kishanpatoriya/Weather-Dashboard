@@ -29,9 +29,10 @@ async function getWeather(city) {
         );
 
         const data=await response.json();
-        if(data.cod != 200){
+        if(data.cod != "200"){
             throw new Error();
         }
+        console.log(data);
         displayWeather(data);
         saveHistory(city);
     }
@@ -44,13 +45,12 @@ async function getWeather(city) {
 
 function displayWeather(data){
     cityName.innerText=data.name;
-
-    temperature.innerText=`${Math.round(data.main.temp)}°C`;;
-
+    temperature.innerText=`${Math.round(data.main.temp)}°C`;
     condition.innerText=data.weather[0].description;
-    humidity.innerText=`${data.main.humidity}%`
+    humidity.innerText=`${data.main.humidity}%`;
     wind.innerText=`${data.wind.speed} km/h`;
     weatherIcon.src=`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    weatherIcon.hidden=false;
 }
 
 function saveHistory(city){
